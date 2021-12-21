@@ -12,7 +12,7 @@ Com as depedências instaladas precisam ser executados dois comandos o yarn serv
 
 
 ## Sobre o projeto
-Protipei no figma, para ter uma melhor visualização antes de codar, segue o link da UI feita por mim : https://www.figma.com/file/VplumPcszUpj8DSteL4FqD/Untitled?node-id=1%3A2.
+Prototipei no figma, para ter uma melhor visualização antes de codar, segue o link da UI feita por mim : https://www.figma.com/file/VplumPcszUpj8DSteL4FqD/Untitled?node-id=1%3A2.
 Pensei em abordar um tema sobre preocupação com as pessoas ao seu redor, pois acho isso de extrema importância, ajudar o próximo. As cores bases escolhidas foi o amarelo e o preto amarelado.
 
 Conforme segue imagem abaixo:
