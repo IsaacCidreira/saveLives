@@ -12,7 +12,11 @@ const Index = () => {
         {dados.map((dado) => (
           <div key={dado.id}>
             <img src={dado.image} alt="" />
-            <p>{dado.description} </p>
+            <div>
+              <p>{dado.description} </p>
+              <p>{dado.description2} </p>
+              <p>{dado.description3} </p>
+            </div>
           </div>
         ))}
       </SubContainer>

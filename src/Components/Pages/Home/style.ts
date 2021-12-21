@@ -23,6 +23,8 @@ export const SubContainer = styled.div`
             margin-left: 62px;
             max-width: 50%;
             position: relative;
+            margin-bottom: 2rem;
+
         }
         p::before{
             content: '';
@@ -35,6 +37,11 @@ export const SubContainer = styled.div`
             left: -1.4rem;
             top: .3rem;
         }
+        div{
+            display: block;
+           
+            
+        }
         
     }
     div:nth-child(even){
@@ -42,6 +49,14 @@ export const SubContainer = styled.div`
         img{
             order: 2;
             margin-left: 62px;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+           
+            
         }
     }
 `

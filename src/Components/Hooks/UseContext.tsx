@@ -5,6 +5,8 @@ interface ContextType {
   id: number;
   image: string;
   description: string;
+  description2: string;
+  description3: string;
 }
 interface ContextTs {
   dados: ContextType[];
