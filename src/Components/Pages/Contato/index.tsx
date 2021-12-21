@@ -5,17 +5,13 @@ import Input from '../../Forms/Input';
 import UseForm from '../../Hooks/UseForm';
 import Titles from '../../Title';
 import { Container } from './style';
-interface addUser {
-  id: number;
-  email: string;
-  telefone: string;
-  message: string;
-}
+
 const Index = () => {
   const email = UseForm('email');
   const nome = UseForm();
-  const telefone = UseForm();
+  const telefone = UseForm('telefone');
   const [comment, setComment] = useState<string>('');
+  console.log(telefone);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -34,11 +30,13 @@ const Index = () => {
   return (
     <Container>
       <Titles title="ENTRE EM CONTATO" />
+
       <form onSubmit={handleSubmit}>
-        <Input type="email" label="Email" name="email" {...email} />
         <Input type="nome" label="Nome" name="nome" {...nome} />
-        <Input type="number" label="telefone" name="telefone" {...telefone} />
+        <Input type="email" label="Email" name="email" {...email} />
+        <Input type="number" label="Telefone" name="telefone" {...telefone} />
         <textarea
+          className="textarea"
           id="comment"
           name="comment"
           placeholder="Comente..."

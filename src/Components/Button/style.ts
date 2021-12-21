@@ -11,6 +11,7 @@ export const Buttons = styled.button`
   box-sizing: border-box;
   border: none;
   transition: 0.1s;
+  margin-top: 3rem;
   &:focus, &:hover{
     outline: none;
     box-shadow: 0 0 0 3px #fea, 0 0 0 4px #fb1;

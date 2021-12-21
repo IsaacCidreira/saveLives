@@ -4,7 +4,6 @@ export const Container = styled.section`
 display: flex;
 flex-direction: column;
 align-items: center;
-justify-content: center;
 height: 100vh;
 
 form{
@@ -14,11 +13,8 @@ form{
     flex-direction: column !important;
     height: 6rem;
     position: relative;
-
   }
-  div:not(:last-child){
-   margin-bottom: 3rem;
-  }
+ 
   input{
     border: 1px solid #eee;
     display: block;
@@ -32,7 +28,9 @@ form{
     text-align: center;
     background: transparent;
     color: white;
-
+  & + input{
+    margin-bottom: 3rem;
+  }
     input:-internal-autofill-selected{
       background: transparent !important;
     }
@@ -43,8 +41,29 @@ form{
       background: transparent;
       box-shadow: 0 0 0 3px #fea;
     }
+
     
   }
+  
+  .textarea{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    resize: none;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    height: 30%;
+    border-radius: 0.2rem;
+    background: #eee;
+    transition: 0.2s;
+    &:focus,
+    &:hover {
+    outline: none;
+    border-color: var(--second-color);
+    background: white;
+    box-shadow: 0 0 03px #fea;
+}
+    }
   label {
     display: block;
     font-size: 1rem;

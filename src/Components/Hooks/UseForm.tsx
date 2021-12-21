@@ -6,23 +6,19 @@ const types = {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     message: 'Preencha um email válido',
   },
+  telefone: {
+    regex:
+      /^\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\)? ?(?:[2-8]|9[1-9])[0-9]{3}\-?[0-9]{4}$/,
+    message: 'Preencha um telefone válido',
+  },
 };
-
-// interface ContextType {
-//   regex: 'boolean';
-//   error: string;
-// }
-// interface ContextTypeArray {
-//   type: ContextType[];
-// }
 
 const UseForm = (type?: keyof typeof types) => {
   const [value, setValue] = useState('');
   const [error, setError] = useState<any>(null);
 
   function validate(value: string) {
-    if (type === undefined) return true;
-    console.log(types[type] && !types[type].regex.test(value));
+    if (type === undefined) return false;
     if (value.length === 0) {
       setError('Preencha um valor');
       return false;
