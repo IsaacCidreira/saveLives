@@ -61,6 +61,7 @@ Podemos ver na imagem a seguir a requisição sendo feita pelo console e também
 Agora vamos no nosso banco de dados observar os dados salvos :
 ![image](https://user-images.githubusercontent.com/80259818/146970620-ca457518-bde4-414f-8b87-05540920a209.png)
 
+OBS: o fake banco de dados fica no arquivo server.json a primeira parte chamada help é a rota de onde puxa as imagens e texto, scrollando mais para baixo você vai ver a parte dos dados que são recebidos do formulário quando um forms for enviado, irá aparecer lá.
 Esses foram o motivo da escolha de usar o JSON Server, mostrar o poder do React e meu conhecimento em requisições de api e tratativas de dados.
 
 
