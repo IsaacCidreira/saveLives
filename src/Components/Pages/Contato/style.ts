@@ -15,6 +15,10 @@ form{
     position: relative;
   }
  
+  input:-internal-autofill-selected{
+    background: transparent !important;
+    color: transparent !important;
+  }
   input{
     border: 1px solid #eee;
     display: block;
@@ -31,9 +35,7 @@ form{
   & + input{
     margin-bottom: 3rem;
   }
-    input:-internal-autofill-selected{
-      background: transparent !important;
-    }
+   
 
     &:focus, &:hover{
       outline: none;
@@ -79,6 +81,19 @@ form{
   font-size: 0.875rem;
   margin-top:1rem;
   }
-
+  @media(max-width: 595px){
+    
+      input{
+        width: 25rem !important;
+      }
+    
+  }
+  @media(max-width: 412px){
+    
+    input{
+      width: 18rem !important;
+    }
+  
+}
 }
 `

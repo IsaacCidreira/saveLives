@@ -29,6 +29,14 @@ export default createGlobalStyle`
     font-weight: 500;
   }
 
+  @media(max-width: 886px){
+    h1, h2, h3, h4, h5, h6, strong {
+    
+    font-size: 4.3vw;
+
+  }
+
+  }
   button {
     cursor: pointer;
   }

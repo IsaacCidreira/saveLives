@@ -11,9 +11,10 @@ export const SubContainer = styled.div`
     div{
         display: flex;
         align-items: flex-start;
-        margin-right: 62px;
-        margin-left: 62px;
+        margin-right: 32px;
+        margin-left: 32px;
         
+       
        &:not(:last-child){
             margin-bottom: 5.8rem;
         }
@@ -24,10 +25,10 @@ export const SubContainer = styled.div`
         }
 
         p{
-            margin-left: 62px;
-            max-width: 50%;
+            max-width: 100%;
             position: relative;
             margin-bottom: 2rem;
+            font-size: 1vw;
 
         }
         p::before{
@@ -50,11 +51,13 @@ export const SubContainer = styled.div`
         
     }
     div:nth-child(even){
+       
         justify-content: right;
         align-items: flex-start;
         img{
             order: 2;
             margin-left: 62px;
+            
         }
 
         div{
@@ -65,4 +68,70 @@ export const SubContainer = styled.div`
             
         }
     }
+    @media(max-width:886px){
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            flex-direction: column;
+            div{
+                max-width: 350px;
+                    p{ 
+                        font-size: .8rem;
+                    }
+                    p:first-child{ 
+                        margin-top: 3rem;
+                    }
+              
+            }
+            
+            
+            img{
+                max-width: 60%;
+                max-height: 100%;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+
+       
+        div:nth-child(even){
+            align-items: center;
+            justify-content: right;
+            align-items: center !important;
+            img{
+                order: 1 ;
+                margin-left:0px;
+                
+            }
+            div{
+                order: 2;
+            }
+       }
+           
+       @media(max-width:400px){
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+            flex-direction: column;
+            div{
+                max-width: 250px;
+                    p{ 
+                        font-size: .7rem;
+                    }
+                    p:first-child{ 
+                        margin-top: 3rem;
+                    }
+              
+            }
+        }
+        
+        }
+}
 `

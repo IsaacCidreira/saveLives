@@ -11,10 +11,11 @@ const Index = () => {
   const nome = UseForm();
   const telefone = UseForm('telefone');
   const [comment, setComment] = useState<string>('');
-  console.log(telefone);
+  const [load, setLoad] = useState<boolean>(false);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    setLoad(true);
     if (email.validate()) {
       const response = await api.post('post', {
         email: email.value,
@@ -22,10 +23,11 @@ const Index = () => {
         telefone: telefone.value,
         message: comment,
       });
-
       if (response.status === 201) {
+        window.location.reload();
       }
     }
+    setLoad(false);
   }
   return (
     <Container>
@@ -43,7 +45,11 @@ const Index = () => {
           value={comment}
           onChange={({ target }) => setComment(target.value)}
         />
-        <Buttons>ENVIAR</Buttons>
+        {load ? (
+          <Buttons disabled>ENVIANDO...</Buttons>
+        ) : (
+          <Buttons>ENVIAR</Buttons>
+        )}
       </form>
     </Container>
   );

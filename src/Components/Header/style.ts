@@ -26,4 +26,33 @@ export const Container = styled.header`
       margin-right: 62px;
     }
   }
+  @media (max-width: 886px){
+    .logo{
+      margin-left: 62px;
+      width: 180px;
+
+    }
+  }
+
+  @media(max-width: 441px){
+
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      a{
+        text-align: center;
+      }
+    
+    .logo{
+      margin-left: 18px !important;
+      width: 140px;
+
+    }
+    .contato{
+      margin-right: 18px;
+    }
+  }
+
+}
 `;
