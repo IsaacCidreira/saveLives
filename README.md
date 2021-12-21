@@ -90,7 +90,7 @@ O CRA sem o React Router não é react, eu falo sempre que deveria já fazer par
 ![image](https://user-images.githubusercontent.com/80259818/146972106-638a3eab-c2e7-442b-84e8-edfd565a5f4a.png)
 
 ##  Context API
-Dispensa até comentários, é uma forma de tratar dados que iremos utilizar ao longo do nosso projeto, podemos usar como exemplo um site de login, quereros ao longo do site inteiro ter informaçõe do usuário, como user.id, user.age , etc. Para isso nós fazemos um custoom hook para sua utilização, a home foi feita recebendo dados de context API, que estão na pasta Hooks > useContext.
+Dispensa até comentários, é uma forma de tratar dados que iremos utilizar ao longo do nosso projeto, podemos usar como exemplo um site de login, queremos ao longo do site inteiro ter informaçõe do usuário, como user.id, user.age , etc. Para isso nós fazemos um custoom hook para sua utilização, a home foi feita recebendo dados de context API, que estão na pasta Hooks > useContext.
 
 Então foram esses os motivos de eu ter utilizado cada tecnologia, espero que gostem!
 
