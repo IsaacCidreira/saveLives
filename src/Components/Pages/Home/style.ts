@@ -10,9 +10,13 @@ export const Container = styled.section`
 export const SubContainer = styled.div`
     div{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         margin-right: 62px;
         margin-left: 62px;
+        
+       &:not(:last-child){
+            margin-bottom: 5.8rem;
+        }
 
         img{
             max-width: 487px;
@@ -38,14 +42,16 @@ export const SubContainer = styled.div`
             top: .3rem;
         }
         div{
-            display: block;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
            
-            
         }
         
     }
     div:nth-child(even){
         justify-content: right;
+        align-items: flex-start;
         img{
             order: 2;
             margin-left: 62px;
