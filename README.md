@@ -1,5 +1,5 @@
 # Save Live
-## Desafio TGroup
+
 ## Como iniciar a aplicação ?
 
 
@@ -30,8 +30,6 @@ Conforme segue imagem abaixo:
 ## Explicação de por que eu ter usado cada tecnologia :
 
 ## JSON SERVER:
-
-O react é uma poderosa lib, pelas sua reatividade e tratativa de dados de forma dinâmica, seguindo obviamente o princípio da imutabilidade. Com o desafio passado não me senti confortável em usar tal poder de forma limitada, sendo assim, como uma alternativa para nós front end utilizarmos um back end, existem umas libs que podem simular API Rest, temos o MirageJS e o usado nesse projeto JSON Server.
 
 No projeto atual todos os dados estão sendo recebido formas dinâmica por Exemplo na Home, usando o axios e fazendo a requisição para o JSON Server eu consigo puxar os dados, conforme abaixo : 
 ![image](https://user-images.githubusercontent.com/80259818/146968267-b3f27b6b-7ec0-4eeb-a46e-941851c03b71.png)
@@ -93,5 +91,5 @@ O CRA sem o React Router não é react, eu falo sempre que deveria já fazer par
 ##  Context API
 Dispensa até comentários, é uma forma de tratar dados que iremos utilizar ao longo do nosso projeto, podemos usar como exemplo um site de login, queremos ao longo do site inteiro ter informaçõe do usuário, como user.id, user.age , etc. Para isso nós fazemos um custoom hook para sua utilização, a home foi feita recebendo dados de context API, que estão na pasta Hooks > useContext.
 
-Então foram esses os motivos de eu ter utilizado cada tecnologia, espero que gostem!
+
 
